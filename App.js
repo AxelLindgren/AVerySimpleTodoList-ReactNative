@@ -18,10 +18,8 @@ export default function App() {
   const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = () => {
-    if (inputValue.trim()) {
       setTodoList([...todoList, inputValue]);
       setInputValue("");
-    }
   };
 
   return (
